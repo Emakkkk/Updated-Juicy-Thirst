@@ -1,0 +1,59 @@
+/* src/components/page/Home.css */
+  .home-section {
+    background-image: url('../images/lemon-bg.png'); /* Replace 'path-to-your-image.jpg' with the actual path to your image file */
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+  }
+
+  
+  .hero-section .row {
+    position: relative;
+    z-index: 22;
+    top: 100px;
+}
+/* Container Styles */
+.container {
+  max-width: 1200px; /* Adjust container width as needed */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+/* Heading Styles */
+h6 {
+  font-size: 18px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0095ff; /* Button background color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 20px; /* Adjust margin as needed */
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0074cc; /* Change button background color on hover */
+}
+
+/* Link Styles */
+.link {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
