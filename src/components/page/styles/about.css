@@ -1,0 +1,141 @@
+/* about.css */
+
+/* Main container */
+.about-container {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Header style */
+.about-heading {
+  font-size: 38px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  color: #d8b000; /* Set the text color (you can change it to your preferred color) */
+  margin-bottom: 20px; /* Add spacing at the bottom */
+  text-align: center; /* Center-align the text */
+  text-transform: uppercase; /* Transform text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing for a stylish look */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Content style */
+.about-content {
+  font-size: 16px;
+  color: #0a0700;
+  line-height: 1.5;
+  margin-top: 20px; /* Add spacing at the top */
+  padding: 20px; /* Add padding to create space around the content */
+  border: 2px solid #f8ac08; /* Add a border for separation */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background-image: url('../styles/images/about-image/about-bg.jpg');
+}
+
+/* Add a hover effect when the user hovers over the content */
+.about-content:hover {
+  background-color: #dad9d6; /* Change background color on hover */
+  transform: scale(1.02); /* Slightly scale up the content on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Style for headings within the content */
+.about-content h3 {
+  font-size: 20px; /* Larger font size for headings */
+  color: #333; /* Darker text color for headings */
+  margin-top: 0; /* Remove default top margin for headings */
+}
+
+/* Style for links within the content */
+.about-content a {
+  color: #007bff; /* Set link color (you can change it to your preferred color) */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Add smooth color transition */
+}
+
+/* Add hover effect for links */
+.about-content a:hover {
+  color: #0056b3; /* Change link color on hover */
+}
+
+/* Team members list style */
+.about-content ul {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Button style */
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Add styles for the team member container */
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1.5px solid #000000; /* Border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.team-list {
+  list-style-type: none; /* Remove list item markers */
+}
+
+/* Style the team member image */
+.team-member img {
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Rounded image */
+  margin: 1px; /* Spacing between image and text */
+}
+
+/* Style the team member information (name and title) */
+.member-info {
+  flex-grow: 1; /* Allow the info to grow and fill available space */
+}
+
+.member-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.member-title {
+  font-size: 28px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  color: #f8ac08; /* Set the text color (you can change it to your preferred color) */
+  text-align: center; /* Center-align the text */
+  margin-top: 10px; /* Add spacing at the top */
+  text-transform: uppercase; /* Transform text to uppercase */
+  letter-spacing: 1px; /* Add letter spacing for a stylish look */
+}
+
+/* Add spacing between team members */
+.team-member + .team-member {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .deal {
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+}
