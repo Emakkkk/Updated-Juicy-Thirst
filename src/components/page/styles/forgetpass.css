@@ -1,0 +1,81 @@
+/* styles/forgetpass.css */
+
+/* Container for the form */
+._9ZCM-m {
+    background-color: #fff; /* Change background color */
+    border-radius: 10px;
+    padding: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto
+  }
+  
+  /* Form header */
+  .GpqIkE {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; /* Align header to the left */
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Button */
+  .qbdGVt {
+    background-color: #f8ac08; /* Change button background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 0; /* Remove left margin */
+  }
+  
+  /* Input field */
+  .pDzPRp {
+    width: 100%;
+    padding: 12px; /* Adjust padding */
+    border: 2px solid #f8ac08;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Style for when the input fields are focused */
+  .pDzPRp:focus {
+    border-color: #f8ac08;
+    box-shadow: 0 0 5px rgba(3, 3, 3, 0.5);
+  }
+  
+  /* Style for placeholder text */
+  .pDzPRp::placeholder {
+    color: #999;
+  }
+  
+  /* Submit button */
+  .wyhvVD {
+    background-color: #f8ac08;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  /* Disable the button when it's disabled */
+  .wyhvVD[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Error message */
+  .pYVjxt {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
