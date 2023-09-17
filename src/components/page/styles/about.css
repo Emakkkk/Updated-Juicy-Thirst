@@ -1,0 +1,156 @@
+/* Base styles for .about-container */
+.about-container {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Header style */
+.about-heading {
+  font-size: 38px;
+  font-weight: bold;
+  color: #d8b000;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Content style */
+.about-content {
+  font-size: 16px;
+  color: #0a0700;
+  line-height: 1.5;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #f8ac08;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('../styles/images/about-image/about-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+/* Add a hover effect when the user hovers over the content */
+.about-content:hover {
+  background-color: #dad9d6;
+  transform: scale(1.02);
+}
+
+/* Style for headings within the content */
+.about-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 0;
+}
+
+/* Style for links within the content */
+.about-content a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Add hover effect for links */
+.about-content a:hover {
+  color: #0056b3;
+}
+
+/* Team members list style */
+.about-content ul {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Button style */
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Add styles for the team member container */
+.team-member {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the team member image */
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px 0; /* Add spacing between image and text */
+}
+
+/* Style the team member information (name and title) */
+.member-info {
+  text-align: center; /* Center-align text on smaller screens */
+}
+
+.member-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.member-title {
+  font-size: 24px; /* Adjust font size for smaller screens */
+  font-weight: bold;
+  color: #f8ac08;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Add spacing between team members */
+.team-member + .team-member {
+  margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust font sizes and spacing for smaller screens */
+  .about-heading {
+    font-size: 32px;
+  }
+  
+  .about-content {
+    font-size: 14px;
+    padding: 15px;
+  }
+  
+  .btn {
+    font-size: 14px;
+  }
+  
+  .member-name {
+    font-size: 20px;
+  }
+  
+  .member-title {
+    font-size: 22px;
+  }
+}
