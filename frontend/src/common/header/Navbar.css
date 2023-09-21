@@ -1,0 +1,126 @@
+/* Default styles for Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffbb00;
+  padding: 25px;
+  transition: background-color 0.4s ease;
+}
+
+.menu-container-ham{
+  color: #ffffff;
+  padding: 10px 20px;
+}
+/* Styles for the menu items */
+.menuitems {
+  list-style: none;
+  display: flex;
+  margin-left: auto; /* This will move the menu items to the right */
+}
+
+.menuitems li {
+  margin-left: 20px; /* Add some spacing between menu items */
+}
+
+.menuitems li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.menuitems li a:hover {
+  background-color: transparent; /* Remove background color */
+  color: #000000; /* Change text color */
+  border: 2px solid #000000; /* Add border */
+  padding: 8px 18px; /* Adjust padding */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styles for the menu toggle button */
+.menu-toggle {
+  cursor: pointer;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.menu-toggle span {
+  font-size: 24px; /* Adjust the font size */
+}
+
+/* Styles for the menu when it's hidden */
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px; /* Adjust the top position as needed */
+  left: 50%; /* Center the menu horizontally */
+  transform: translateX(-50%); /* Adjust to center precisely */
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 250px; /* Adjust the width as needed */
+}
+
+/* Styles for the menu when it's active (open) */
+.menu.active {
+  display: block;
+  left: 205px; /* Adjust the left position as needed */
+  top: 25px; /* Adjust the top position as needed */
+}
+
+/* Styles for the menu items */
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ce8f09;
+  font-size: 18px;
+  display: block;
+  transition: 0.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px 15px; /* Increase padding for a larger clickable area */
+}
+
+.menu a:hover {
+  background-color: #dfdfdf; /* Hover background color */
+  border-radius: 5px;
+  padding: 15px 20px; /* Increase padding for a larger clickable area */
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .menuitems {
+    margin-left: 0;
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .menuitems li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+    margin-right: 0;
+  }
+}

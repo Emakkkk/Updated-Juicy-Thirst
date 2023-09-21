@@ -1,0 +1,127 @@
+/* forgetpass.css */
+
+.forget-pass-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.forget-pass-container h2 {
+  font-size: 21px;
+  color: #0a0a0a;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.forget-pass-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.forget-pass-container .form-pass {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.forget-pass-container .form-pass label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.forget-pass-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #706f6f;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000000;
+  transition: border-color 0.3s;
+}
+
+.forget-pass-container input[type="email"]:hover {
+  border-color: #f8ac08;
+}
+
+.forget-pass-container input[type="email"]:focus {
+  border-color: #f8ac08;
+  outline: none;
+}
+
+.forget-pass-container button {
+  background-color: #f8ac08;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.forget-pass-container button:hover {
+  background-color: #eec978;
+}
+
+.forget-pass-container .success-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8ac08;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 480px) {
+  .forget-pass-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .forget-pass-container h2 {
+    font-size: 18px;
+  }
+
+  .forget-pass-container .form-pass label {
+    font-size: 16px;
+  }
+
+  .forget-pass-container input[type="email"] {
+    font-size: 14px;
+  }
+
+  .forget-pass-container button {
+    font-size: 16px;
+  }
+}
+
+/* Additional Styles */
+.forget-pass-container .note {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.forget-pass-container .note a {
+  text-decoration: none;
+  color: #f8ac08;
+}
+
+.forget-pass-container .note a:hover {
+  text-decoration: underline;
+}
